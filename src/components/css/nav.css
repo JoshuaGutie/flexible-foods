@@ -64,7 +64,7 @@
 
 .mobileLinks a {
   text-decoration: none;
-  font-size: 80px;
+  font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #252525;
   margin-top: 40px;
@@ -78,5 +78,9 @@
 .mobileLinks a.active {
   text-decoration: solid underline #E25306 4px;
   opacity: 0.75;
+}
+
+h2 {
+  font-size: 40px;
 }
 }

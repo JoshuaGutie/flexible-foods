@@ -114,6 +114,10 @@ span {
     width: auto;
     position: relative;
     margin-bottom: 200px !important;
-}
 
+}
+.coverp {
+    width: 275px !important;
+    height: 275px !important;
+}
 }
