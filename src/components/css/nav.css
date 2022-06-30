@@ -27,3 +27,56 @@
 .fork {
     margin-right: 3vw;
 }
+
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.mobileNav a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #252525;
+  margin-top: 20px;
+}
+
+.nav {
+  display: none;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height:75vh;
+  background-color:#FFFF;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mobileLinks a {
+  text-decoration: none;
+  font-size: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #252525;
+  margin-top: 40px;
+}
+
+.mobileLinks a:hover {
+  background-color: #d1ffff rgba(0, 0, 0, 0.5);
+  color: #F96D22;
+}
+
+.mobileLinks a.active {
+  text-decoration: solid underline #E25306 4px;
+  opacity: 0.75;
+}
+}
