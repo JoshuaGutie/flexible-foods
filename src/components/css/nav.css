@@ -15,7 +15,7 @@
 }
 
 .nav a:hover {
-    background-color: #d1ffff;
+    background-color: #d1ffff rgba(0, 0, 0, 0.5);
     color: #F96D22;
     ;}
   
