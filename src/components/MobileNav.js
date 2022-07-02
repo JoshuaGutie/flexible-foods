@@ -41,22 +41,22 @@ class MobileNav extends Component {
       </div>
       {this.state.isShow && (
           <div className="mobileLinks">{
-            <NavLink exact to="/">
+            <NavLink onClick={this.createText} exact to="/">
              Home
             </NavLink>
           }
                     {
-            <NavLink exact activeClassName="active" to="/recipes">
+            <NavLink onClick={this.createText} exact activeClassName="active" to="/recipes">
               Find Recipes
             </NavLink>
           }
                     {
-            <NavLink exact activeClassName="active" to="/favorites">
+            <NavLink onClick={this.createText} exact activeClassName="active" to="/favorites">
               Favorites
             </NavLink>
           }
                     {
-            <NavLink exact activeClassName="active" to="/about">
+            <NavLink  onClick={this.createText} exact activeClassName="active" to="/about">
               About
             </NavLink>
           }</div> )}

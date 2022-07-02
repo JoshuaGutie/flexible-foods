@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-
+import Recipes from "./components/Recipes"
 // Start Router function here //
 
 export function Router() {
@@ -11,6 +11,8 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/recipes" element={<Recipes />} />
+
     </Routes>
   );
 }

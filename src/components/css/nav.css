@@ -76,7 +76,7 @@
 }
 
 .mobileLinks a.active {
-  text-decoration: solid underline #E25306 4px;
+  color: #E25306;
   opacity: 0.75;
 }
 

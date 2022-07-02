@@ -1,0 +1,40 @@
+.recipeC {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipeInfo {
+  margin-top: 30px;
+  width: 30vw;
+  height: auto;
+}
+
+.tutor {
+  text-align: left;
+  margin-left: 20vw;
+  width: 25vw;
+  border-bottom: #f96d22 5px solid;
+}
+
+@media only screen and (max-width: 1400px) {
+  .cover {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .coverp {
+    margin: auto;
+  }
+
+  .recipeC {
+      align-items: center;
+  }
+
+  .tutor {
+    margin-left: 0px !important;
+width: 80vw;
+  }
+}

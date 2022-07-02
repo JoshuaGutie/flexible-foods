@@ -34,6 +34,11 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     justify-content: center;
 }
 
+.coverp{
+   width: 475px;
+   height: 475px;
+}
+
 
 
 
@@ -95,7 +100,6 @@ span {
 
 .trio{
     flex-direction: column;
-    margin-top: 250px;
 }
 
 .card{
@@ -113,11 +117,18 @@ span {
 .query{
     width: auto;
     position: relative;
-    margin-bottom: 200px !important;
 
 }
 .coverp {
     width: 275px !important;
     height: 275px !important;
+}
+
+.infoC{
+    margin-bottom: 150px;
+}
+h2{
+    text-align: left;
+    margin-left: 50px;
 }
 }
