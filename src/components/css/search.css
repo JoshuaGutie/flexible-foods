@@ -1,0 +1,21 @@
+.listC {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.item {
+    text-decoration: none;
+    width: min-content;
+    font-size: 30px;
+    margin: auto;
+}
+
+form {
+    width: fit-content;
+}
