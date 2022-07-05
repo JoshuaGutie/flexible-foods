@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+.list ol {
+    width: fit-content;
+}
+
 .item {
     text-decoration: none;
     width: min-content;
