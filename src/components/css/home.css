@@ -1,6 +1,6 @@
 .container {
     width: 100vw;
-    height: 1500px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -71,14 +71,17 @@ span {
     display: flex;
     justify-content: space-evenly;
     margin-left: 10vw;
-    height: 450px;
+    height: auto;
 }
 
 .card {
     width: 325px;
-    height: 350px;
+    height: 350px !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -106,6 +109,7 @@ span {
 .card{
     margin: auto;
     margin-bottom: 50px;
+    height: 400px !important;
 }
 }
 

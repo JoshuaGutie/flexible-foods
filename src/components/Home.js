@@ -4,6 +4,8 @@ import cover from "./img/cover.png";
 import fridge from "./img/fridge.png";
 import recipes from "./img/recipes.png";
 import calculator from "./img/calculator.png";
+import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
 
 class Home extends Component {
   render() {
@@ -34,24 +36,56 @@ class Home extends Component {
         </div>
         <div className="trio">
           <div className="card">
-            <img src={fridge} alt="fridge" style={{ width: "100px" }} />
+            <img
+              src={fridge}
+              alt="fridge"
+              style={{ width: "100px", alignSelf: "center" }}
+            />
             <h3>Find Recipes</h3>
             <span>
               Find the best recipes based on whats already in your refrigerator{" "}
             </span>
+            <NavLink
+              onClick={this.createText}
+              exact
+              activeClassName="active"
+              to="/recipes"
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  marginTop: "10px",
+                  backgroundColor: "#F96D22",
+                  fontSize: "18px",
+                }}
+              >
+                Go
+              </Button>
+            </NavLink>
           </div>
           <div className="card" style={{ alignSelf: "flex-end" }}>
-          <img src={recipes} alt="fridge" style={{ width: "100px" }} />
-          <h3>Favorites</h3>
+            <img
+              src={recipes}
+              alt="fridge"
+              style={{ width: "100px", alignSelf: "center" }}
+            />
+            <h3>Favorites</h3>
             <span>
-            Browse through my selection of favorite recipes inside the spoonacular API{" "}
+              Browse through my selection of favorite recipes inside the
+              spoonacular API{" "}
             </span>
           </div>
           <div className="card">
-          <img src={calculator} alt="fridge" style={{ width: "100px" }} />
-          <h3>Calorie Calculator</h3>
+            <img
+              src={calculator}
+              alt="fridge"
+              style={{ width: "100px", alignSelf: "center" }}
+            />
+            <h3>Calorie Calculator</h3>
             <span>
-            Calculate your maintainance calorie intake as well as calorie deficite{" "}
+              Calculate your maintainance calorie intake as well as calorie
+              deficite{" "}
             </span>
           </div>
         </div>

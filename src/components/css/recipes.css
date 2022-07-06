@@ -19,6 +19,13 @@
 }
 
 @media only screen and (max-width: 1400px) {
+.recipeInfo{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
   .cover {
     flex-direction: column;
     justify-items: center;
@@ -37,4 +44,20 @@
     margin-left: 0px !important;
 width: 80vw;
   }
+}
+
+
+@media only screen and (max-width: 500px) {
+.recipeInfo{
+    width: 90vw;
+}
+h1{
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 35px !important;
+    margin-left: 0px;
+    text-align: center;
+}
 }
