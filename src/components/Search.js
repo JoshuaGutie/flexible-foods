@@ -4,26 +4,38 @@ import "./css/search.css";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SearchData from "./SearchData";
 
 class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
       value: "",
+      index: 0,
       ingredients: [],
-      mealData: (null),
+      mealData: null,
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
+  /*Delete function to remove unwanted ingredients */
+  handleDelete(index) {
+    this.setState({
+      ingredients: this.state.ingredients.filter((item) => item.includes()),
+    });
+    console.log();
+  }
+
   handleClick(_event) {
     {
       /* Fethcing API data*/
     }
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=bd41dee3858049c3960ddbfde3393060&ingredients=${this.state.ingredients}&number=2`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=bd41dee3858049c3960ddbfde3393060&ingredients=${this.state.ingredients}&number=4`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -34,17 +46,25 @@ class Search extends Component {
       });
     console.log(this.state.mealData);
   }
+  /*Form Changes */
 
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
+  /*Function to add items to ingredients state array */
 
   handleSubmit(event) {
-    if (this.state.value != "") {
+    if (this.state.value !== "") {
       this.setState((prevState) => ({
         ingredients: [...prevState.ingredients, this.state.value],
       }));
+
+      this.setState((prevState) => {
+        return { index: prevState.index + 1 };
+      });
       console.log(this.state.ingredients);
+      console.log(this.state.index);
+
       this.setState({ value: "" });
 
       event.preventDefault();
@@ -57,6 +77,7 @@ class Search extends Component {
     return (
       <div className="searchC">
         <div className="listC">
+          {/*ingredients form */}
           <form onSubmit={this.handleSubmit}>
             <TextField
               label="Your Ingredients"
@@ -73,6 +94,8 @@ class Search extends Component {
               <AddIcon />
             </Fab>
           </form>
+
+          {/*initiates search for recipes */}
           <Fab
             aria-label="save"
             onClick={this.handleClick}
@@ -80,23 +103,34 @@ class Search extends Component {
           >
             <SearchIcon />
           </Fab>
-          <ol className="list">
-            {this.state.ingredients.map((item) => {
-              return <li className="item">{item}</li>;
-            })}
-          </ol>
+
+          {/*if ingredients is not empty then render each item */}
+          {this.state.ingredients != "" && (
+            <div className="ingredientsC">
+              <ol className="list">
+                {this.state.ingredients.map((item, index) => {
+                  return (
+                    <li key={index} className="item">
+                      {item}
+                      <Fab
+                        aria-label="save"
+                        onClick={this.handleDelete}
+                        style={{ margin: "auto" }}
+                        key={index}
+                      >
+                        <DeleteIcon />
+                      </Fab>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          )}
         </div>
+        {/*if mealdata is not empty then search and render recipes via spoonacular */}
         {this.state.mealData != null && (
-          <div className="mealInfo">
-            {this.state.mealData.map(function (item, index) {
-              return (
-                <ul>
-                  <li key={index}>{item.title}</li> <li >Missing ingredient: {item.usedIngredientCount}</li>
-                </ul>
-              );
-            })}
-          </div>
-        )}
+            <SearchData mealData={this.state.mealData} />
+          )}
       </div>
     );
   }

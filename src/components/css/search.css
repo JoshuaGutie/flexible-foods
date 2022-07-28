@@ -1,7 +1,10 @@
+.searchC {
+    display: flex;
+}
 .listC {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 40vw;
 }
 .list {
     display: flex;
@@ -14,6 +17,7 @@
 }
 
 .item {
+    display: flex;
     text-decoration: none;
     width: min-content;
     font-size: 30px;
@@ -22,4 +26,26 @@
 
 form {
     width: fit-content;
+}
+
+.ingredientsC{
+    display: flex;
+    width: min-content;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.dataC {
+    width: 50vw;
+}
+
+.mealC {
+    display: flex;
+    flex-direction: column;
+}
+
+.mealC img {
+    width: 450px;
+    margin: auto;
 }
