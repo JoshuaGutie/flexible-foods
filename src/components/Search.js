@@ -6,6 +6,8 @@ import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SearchData from "./SearchData";
+import orange from "./img/orange.png"
+
 
 class Search extends Component {
   constructor(props) {
@@ -125,6 +127,7 @@ class Search extends Component {
                 })}
               </ol>
             </div>
+            
           )}
         </div>
         {/*if mealdata is not empty then search and render recipes via spoonacular */}

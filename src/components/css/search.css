@@ -1,19 +1,28 @@
 .searchC {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 .listC {
     display: flex;
     flex-direction: column;
     width: 40vw;
+    margin-top: 40px;
+}
+
+.listC form {
+    margin: auto;
 }
 .list {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .list ol {
     width: fit-content;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .item {
@@ -43,9 +52,67 @@ form {
 .mealC {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: min-content;
+padding: 10px;
 }
 
 .mealC img {
     width: 450px;
     margin: auto;
+    transition: 0.6s;
+}
+
+.mealC img:hover {
+    width: 500px;
+    border: #F96D22 5px solid;
+}
+
+.mealTitle {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #F96D22;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.mealTitle:hover {
+    color:#6d2e0c
+}
+
+.missing {
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media only screen and (max-width: 850px) {
+.searchC {
+    flex-direction: column;
+}
+    .mealC img {
+        width: 300px;
+    }
+
+    .mealC img:hover {
+        width: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .mealC img {
+        width: 200px;
+    }
+
+    .mealC img:hover {
+        width: 200px;
+    }
+
+
+    .mealC {
+        padding: 10px;
+    }
+
 }

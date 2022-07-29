@@ -20,9 +20,10 @@ export default function Meal({ item }) {
 
   return (
     <div className="mealC">
-       <img src={item.image} alt="recipe" />
-        <a href={info.sourceUrl}>{item.title}</a>
-        <a>Missing ingredient: {item.usedIngredientCount}</a>
+       <img src={item.image} alt="recipe" className="mealImage" />
+        <a href={info.spoonacularSourceUrl} target="_blank" className="mealTitle">{item.title}</a>
+        <a className="missing">Missing ingredients: {item.usedIngredientCount}</a>
+        <b className="missing">{info.dishTypes}</b>
 
     </div>
   );
