@@ -23,7 +23,7 @@ export default function Meal({ item }) {
        <img src={item.image} alt="recipe" className="mealImage" />
         <a href={info.spoonacularSourceUrl} target="_blank" className="mealTitle">{item.title}</a>
         <a className="missing">Missing ingredients: {item.usedIngredientCount}</a>
-        <b className="missing">Type: {info.dishTypes[0]}</b>
+        <b className="missing">Type: {info.dishTypes}</b>
 
     </div>
   );
