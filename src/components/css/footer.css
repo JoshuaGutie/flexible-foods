@@ -81,5 +81,10 @@ font-size: 26px;
 
     .footer span {
     }
+
+    .footerLinks a:hover {
+        color: #8D3100;
+        }
+        
     
 }
