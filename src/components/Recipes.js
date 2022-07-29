@@ -3,6 +3,8 @@ import searchCover from "./img/searchCover.png";
 import "./css/recipes.css";
 import Search from "./Search";
 import orange from "./img/orange.png";
+import Footer from "./Footer";
+
 
 class Recipes extends Component {
   render() {
@@ -37,6 +39,7 @@ class Recipes extends Component {
           </span>
         </div>
         <Search />
+        <Footer />
       </div>
     );
   }

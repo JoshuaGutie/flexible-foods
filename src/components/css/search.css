@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .listC {
     display: flex;
@@ -93,6 +94,7 @@ padding: 10px;
 }
     .mealC img {
         width: 300px;
+        border: 0px;
     }
 
     .mealC img:hover {

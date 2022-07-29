@@ -6,6 +6,8 @@ import recipes from "./img/recipes.png";
 import calculator from "./img/calculator.png";
 import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
+
 
 class Home extends Component {
   render() {
@@ -89,6 +91,7 @@ class Home extends Component {
             </span>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
