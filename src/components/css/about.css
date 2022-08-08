@@ -1,0 +1,28 @@
+.aboutC {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+}
+
+.aboutCover {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.madeEasy {
+    text-decoration: solid underline #E25306 4px;
+}
+
+.aboutInfo{
+    width: 33vw;
+    margin-left: 100px;
+}
+
+.aboutInfo p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-align: left !important;
+}
+

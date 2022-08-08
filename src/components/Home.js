@@ -75,7 +75,7 @@ class Home extends Component {
             <h3>Favorites</h3>
             <span>
               Browse through my selection of favorite recipes inside the
-              spoonacular API{" "}
+              spoonacular API ---(Coming Soon)--{" "}
             </span>
           </div>
           <div className="card">

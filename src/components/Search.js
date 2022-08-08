@@ -9,6 +9,10 @@ import SearchData from "./SearchData";
 import orange from "./img/orange.png"
 
 
+
+
+
+
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -17,6 +21,7 @@ class Search extends Component {
       index: 0,
       ingredients: [],
       mealData: null,
+      load:3
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -37,7 +42,7 @@ class Search extends Component {
       /* Fethcing API data*/
     }
     fetch(
-      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=bd41dee3858049c3960ddbfde3393060&ingredients=${this.state.ingredients}&number=4`
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=bd41dee3858049c3960ddbfde3393060&ingredients=${this.state.ingredients}&number=${this.state.load}`
     )
       .then((response) => response.json())
       .then((data) => {

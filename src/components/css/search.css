@@ -1,14 +1,16 @@
 .searchC {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content:flex-start;
+    margin-left:20vw;
     margin-bottom: 100px;
 }
 .listC {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 20vw;
     margin-top: 40px;
+    margin-right: 10vw;
 }
 
 .listC form {

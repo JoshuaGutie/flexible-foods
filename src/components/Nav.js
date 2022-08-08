@@ -19,8 +19,8 @@ class Nav extends Component {
             </NavLink>
           }
                     {
-            <NavLink exact activeClassName="active" to="/favorites">
-              Favorites
+            <NavLink exact activeClassName="active" to="/calculator">
+              Calculator
             </NavLink>
           }
                     {
