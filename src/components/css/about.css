@@ -1,3 +1,9 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 .aboutC {
     display: flex;
     width: 100vw;
