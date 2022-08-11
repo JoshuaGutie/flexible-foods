@@ -6,12 +6,7 @@ import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SearchData from "./SearchData";
-import orange from "./img/orange.png"
-
-
-
-
-
+import ExpandIcon from "@mui/icons-material/Expand";
 
 class Search extends Component {
   constructor(props) {
@@ -21,15 +16,30 @@ class Search extends Component {
       index: 0,
       ingredients: [],
       mealData: null,
-      load:3
+      load: 3,
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.handleLoad = this.handleLoad.bind(this);
   }
   /*Delete function to remove unwanted ingredients */
+  handleLoad(_event) {
+    fetch(
+      `https://api.spoonacular.com/recipes/findByIngredients?apiKey=bd41dee3858049c3960ddbfde3393060&ingredients=${this.state.ingredients}&number=${this.state.load}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ mealData: data });
+      })
+      .catch(() => {
+        console.log("error");
+      });
+      this.setState({ load: this.state.load + 3 });
+  }
+
   handleDelete(index) {
     this.setState({
       ingredients: this.state.ingredients.filter((item) => item.includes()),
@@ -112,6 +122,7 @@ class Search extends Component {
           </Fab>
 
           {/*if ingredients is not empty then render each item */}
+
           {this.state.ingredients != "" && (
             <div className="ingredientsC">
               <ol className="list">
@@ -132,13 +143,25 @@ class Search extends Component {
                 })}
               </ol>
             </div>
-            
           )}
         </div>
         {/*if mealdata is not empty then search and render recipes via spoonacular */}
         {this.state.mealData != null && (
+          <>
+            <div className="showMore">
+              {" "}
+              <span>Show More Recipes</span>
+              <Fab
+                aria-label="save"
+                onClick={this.handleLoad}
+                style={{ margin: "auto" }}
+              >
+                <ExpandIcon />
+              </Fab>
+            </div>
             <SearchData mealData={this.state.mealData} />
-          )}
+          </>
+        )}
       </div>
     );
   }

@@ -89,6 +89,9 @@ padding: 10px;
     font-size: 20px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.showMore {
+color: #252525;
+}
 
 @media only screen and (max-width: 850px) {
 .searchC {
