@@ -47,10 +47,10 @@ class Home extends Component {
             <span>
               Find the best recipes based on whats already in your refrigerator{" "}
             </span>
-            <NavLink
+            <NavLink 
               onClick={this.createText}
               exact
-              activeClassName="active"
+              ClassName="active"
               to="/recipes"
             >
               <Button

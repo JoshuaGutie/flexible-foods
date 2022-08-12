@@ -1,34 +1,121 @@
-*, html, body {
-    box-sizing: border-box;
-    margin: 0;
-}
-
-
 .aboutC {
-    display: flex;
-    width: 100vw;
-    height: auto;
-    flex-direction: column;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
 }
 
 .aboutCover {
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
 }
 
 .madeEasy {
-    text-decoration: solid underline #E25306 4px;
+  text-decoration: solid underline #e25306 4px;
 }
 
-.aboutInfo{
-    width: 33vw;
-    margin-left: 100px;
+.aboutInfo {
+  width: 33vw;
+  margin-left: 100px;
 }
 
 .aboutInfo p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    text-align: left !important;
+  font-size: 32px;
 }
 
+.aboutInfo p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-align: left !important;
+}
+
+.titleSpan {
+  font-size: 64px;
+}
+
+.animatedTitle {
+  margin-top: 50px;
+}
+
+.aboutImg {
+  width: 300px;
+}
+
+.aboutCardContainer {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.aboutCard {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.aboutCard span {
+  font-size: 36px;
+  width: 900px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .aboutInfo {
+    width: 90vw;
+    margin: 5vw;
+  }
+
+  .cover {
+    width: 600px !important;
+    height: 241px !important ;
+  }
+  .aboutCard span {
+    font-size: 24px;
+    height: fit-content;
+    width: 70vw;
+  }
+
+  .aboutImg {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutInfo {
+    width: 90vw;
+    margin: 5vw;
+  }
+  .cover {
+    width: 350px !important;
+    height: 201px !important ;
+  }
+  .aboutCard span {
+    font-size: 24px;
+    height: fit-content;
+    width: 70vw;
+    order: 1;
+  }
+
+  .aboutImg {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
+
+  .aboutCard {
+    flex-direction: column;
+  }
+
+  .titleSpan {
+    font-size: 48px !important;
+  }
+}
