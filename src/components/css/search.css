@@ -1,141 +1,153 @@
 .searchC {
-    display: flex;
-    align-items: flex-start;
-    justify-content:flex-start;
-    margin-left:20vw;
-    margin-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20vw;
+  margin-bottom: 100px;
 }
 .listC {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    margin-top: 40px;
-    margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 40px;
+  margin-right: 10vw;
 }
 
 .listC form {
-    margin: auto;
+  margin: auto;
 }
 .list {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .list ol {
-    width: fit-content;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: fit-content;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .item {
-    display: flex;
-    text-decoration: none;
-    font-size: 30px;
-    margin: auto;
+  display: flex;
+  text-decoration: none;
+  font-size: 30px;
+  margin: auto;
 }
-
+.likes {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #e25306;
+}
 form {
-    width: fit-content;
+  width: fit-content;
 }
 
-.ingredientsC{
-    display: flex;
-    flex-direction: column;
-    width:max-content;
-    margin: auto;
-    justify-content: space-between;
-    margin-top: 100px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
+.ingredientsC {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .ingredientsC span {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .dataC {
-    width: 50vw;
+  width: 50vw;
 }
 
 .mealC {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: min-content;
-padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: min-content;
+  padding: 10px;
 }
 
 .mealC img {
-    width: 450px;
-    margin: auto;
-    transition: 0.6s;
+  width: 450px;
+  margin: auto;
+  transition: 0.6s;
 }
 
 .mealC img:hover {
-    width: 500px;
-    border: #F96D22 5px solid;
+  width: 500px;
+  border: #f96d22 5px solid;
 }
 
 .mealTitle {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    color: #F96D22;
-    transition: 0.3s;
-    margin-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #f96d22;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 .mealTitle:hover {
-    color:#6d2e0c
+  color: #6d2e0c;
 }
 
 .missing {
-    font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .showMore {
-color: #252525;
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #252525;
+  align-self: flex-end;
+  top: 75px;
+  left: 350px;
+ 
+}
+
+.showMore span {
+    width: max-content;
 }
 
 @media only screen and (max-width: 850px) {
-.searchC {
+  .searchC {
     flex-direction: column;
     width: 80vw;
     margin: auto;
-}
+  }
 
-.listC {
+  .listC {
     width: 80vw;
-}
-    .mealC img {
-        width: 300px;
-        border: 0px;
-    }
+  }
+  .mealC img {
+    width: 300px;
+    border: 0px;
+  }
 
-    .mealC img:hover {
-        width: 350px;
-    }
-    .tutor {
-        margin-top: 100px;
-    }
+  .mealC img:hover {
+    width: 350px;
+  }
+  .tutor {
+    margin-top: 100px;
+  }
 }
-
 
 @media only screen and (max-width: 500px) {
-    .mealC img {
-        width: 200px;
-    }
+  .mealC img {
+    width: 200px;
+  }
 
-    .mealC img:hover {
-        width: 200px;
-    }
+  .mealC img:hover {
+    width: 200px;
+  }
 
-
-    .mealC {
-        padding: 10px;
-    }
-
+  .mealC {
+    padding: 10px;
+  }
 }

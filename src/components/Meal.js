@@ -28,8 +28,9 @@ export default function Meal({ item }) {
     <a.div style={styles} className="mealC">
        <img src={item.image} alt="recipe" className="mealImage" />
         <a href={info.spoonacularSourceUrl} target="_blank" className="mealTitle">{item.title}</a>
-        <a className="missing">Missing ingredients: {item.usedIngredientCount}</a>
+        <a className="missing">Missing ingredients: {item.missedIngredientCount}</a>
         <b className="missing">servings: <p style={{margin:"0px"}} >{info.servings}</p></b> 
+        <a className="likes">Likes: {item.likes}</a>
 
     </a.div>
   );
