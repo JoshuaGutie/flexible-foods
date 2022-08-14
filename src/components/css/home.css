@@ -95,7 +95,7 @@ span {
 }
 
 .header{
-    margin-top: 100px;
+    margin-top: 200px !important;
     margin: auto;
 }
 
@@ -113,6 +113,10 @@ span {
     margin: auto;
     margin-bottom: 50px;
     height: 400px !important;
+}
+
+.infoC {
+    margin-top: 250px;
 }
 }
 

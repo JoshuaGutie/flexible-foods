@@ -113,6 +113,7 @@ class Search extends Component {
           </form>
 
           {/*initiates search for recipes */}
+          <span style={{margin:"auto", marginTop:"20px"}}>Search</span>
           <Fab
             aria-label="save"
             onClick={this.handleClick}
@@ -124,25 +125,25 @@ class Search extends Component {
           {/*if ingredients is not empty then render each item */}
 
           {this.state.ingredients != "" && (
-            <div className="ingredientsC">
+            <><div className="ingredientsC">
+              <span>Your Ingredients</span>
               <ol className="list">
                 {this.state.ingredients.map((item, index) => {
                   return (
                     <li key={index} className="item">
                       {item}
-                      <Fab
-                        aria-label="save"
-                        onClick={this.handleDelete}
-                        style={{ margin: "auto" }}
-                        key={index}
-                      >
-                        <DeleteIcon />
-                      </Fab>
                     </li>
+
                   );
                 })}
               </ol>
-            </div>
+            </div><Fab
+              aria-label="save"
+              onClick={this.handleDelete}
+              style={{ margin: "auto" }}
+            >
+                <DeleteIcon />
+              </Fab></>
           )}
         </div>
         {/*if mealdata is not empty then search and render recipes via spoonacular */}
