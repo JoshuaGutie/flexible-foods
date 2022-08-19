@@ -26,7 +26,7 @@ class About extends Component {
             className="cover"
           />
         </div>
-        <div className="aboutInfo">
+        <div className="info">
           <h1>Meal Planning</h1>
           <h2 className="madeEasy">Made Easy</h2>
           <p>

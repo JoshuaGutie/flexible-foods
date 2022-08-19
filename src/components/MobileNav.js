@@ -62,7 +62,7 @@ class MobileNav extends Component {
                 onClick={this.createText}
                 exact
                 activeClassName="active"
-                to="/calcuulator"
+                to="/calculator"
               >
                 Calculator
               </NavLink>
