@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 
-
 class Home extends Component {
   render() {
     return (
@@ -47,7 +46,7 @@ class Home extends Component {
             <span>
               Find the best recipes based on whats already in your refrigerator{" "}
             </span>
-            <NavLink 
+            <NavLink
               onClick={this.createText}
               exact
               ClassName="active"
@@ -89,6 +88,24 @@ class Home extends Component {
               Calculate your maintainance calorie intake as well as calorie
               deficite{" "}
             </span>
+            <NavLink
+              onClick={this.createText}
+              exact
+              ClassName="active"
+              to="/calculator"
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  marginTop: "10px",
+                  backgroundColor: "#F96D22",
+                  fontSize: "18px",
+                }}
+              >
+                Go
+              </Button>
+            </NavLink>
           </div>
         </div>
         <Footer />

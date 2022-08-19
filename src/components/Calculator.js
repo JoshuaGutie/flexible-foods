@@ -1,7 +1,7 @@
 import "./css/calculator.css";
 import calorieCover from "./img/calorieCover.png"
 import FindCalculate from "./FindCalculate";
-
+import Footer from "./Footer";
 
 
 function Calculator() {
@@ -18,6 +18,7 @@ function Calculator() {
         <img src={calorieCover} alt='calculator' className="coverc"/>
       </div>
       <FindCalculate />
+      <Footer />
     </div>
   );
 }

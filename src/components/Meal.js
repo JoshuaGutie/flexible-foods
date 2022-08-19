@@ -24,6 +24,7 @@ export default function Meal({ item }) {
       console.log("info", info);
     }, [])
 
+
   return (
     <a.div style={styles} className="mealC">
        <img src={item.image} alt="recipe" className="mealImage" />

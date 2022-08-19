@@ -12,3 +12,9 @@
     width: 474px;
     height: 316px;
 }
+
+.formContainer form {
+    margin: auto;
+    color: red;
+}
+

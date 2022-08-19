@@ -7,6 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import DeleteIcon from "@mui/icons-material/Delete";
 import SearchData from "./SearchData";
 import ExpandIcon from "@mui/icons-material/Expand";
+import Empty from "./Empty";
 
 class Search extends Component {
   constructor(props) {
@@ -147,6 +148,10 @@ class Search extends Component {
           )}
         </div>
         {/*if mealdata is not empty then search and render recipes via spoonacular */}
+        {this.state.mealData === null && (
+          <Empty />
+        )}
+
         {this.state.mealData != null && (
           <>
             <div className="showMore">
