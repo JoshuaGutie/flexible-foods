@@ -18,3 +18,15 @@
     color: red;
 }
 
+@media only screen and (max-width: 1250px) {
+    .coverContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coverc {
+        margin: auto;
+        width: 350px;
+        height: 233.33px;
+    }
+}

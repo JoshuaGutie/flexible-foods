@@ -34,6 +34,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 .cover {
     display: flex;
     justify-content: center;
+    margin-bottom: 75px;
 }
 
 .coverp{

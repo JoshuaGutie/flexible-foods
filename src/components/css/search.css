@@ -163,13 +163,30 @@ margin: 20px auto 0 auto;
   width: 470px;
   height: 480px;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1250px) {
   .searchC {
     flex-direction: column;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
   }
+.empties{
+  width: 320px;
+}
 
+
+.emptyDesc{
+  width: 300px;
+}
+.emptyImg{
+  width: 295px;
+}
+.emptyContainer{
+  width: 100vw;
+  margin-bottom: 40px;
+}
+  .emptyContainer{
+    margin-bottom:40px;
+  }
   .listC {
     width: 80vw;
   }

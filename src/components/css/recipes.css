@@ -6,16 +6,20 @@
 }
 
 .recipeInfo {
-  margin-top: 30px;
+  margin-top: 70px;
   width: 30vw;
   height: auto;
 }
+.cover {
+  height: 475px;
 
+}
 .tutor {
   text-align: left;
   margin-left: 20vw;
   width: 25vw;
   border-bottom: #f96d22 5px solid;
+
 }
 
 @media only screen and (max-width: 1400px) {
